@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-portfolio",
+  "name": "hisham-portfolio",
   "private": true,
-  "description": "A simple personal & portfolio template",
+  "description": "Personnel Portfolio Site",
   "version": "0.1.0",
-  "author": "AbdelAli <abdali.dahir@gmail.com>",
+  "author": "Hisham <tkhisham007@gmail.com>",
   "dependencies": {
     "gatsby": "^3.14.3",
     "gatsby-image": "^3.11.0",
@@ -53,8 +53,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/AbdaliDahir/gatsby-portfolio"
-  },
-  "bugs": {
-    "url": "https://github.com/AbdaliDahir/gatsby-portfolio/issues"
   }
 }
