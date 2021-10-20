@@ -10,6 +10,13 @@ const Footer = () => {
 		<>
 			<FooterStyle>
 				<ContainerLayout>
+				<FooterBody>
+							<p className="text-primary quote"> Ready to take the next step and work together? </p>
+							
+								<Contact />
+
+
+						</FooterBody>
 					<FooterBody>
 						<FooterSocialMedia>
 							{socialMedia.map(({ id, name, url }) => (
@@ -20,15 +27,7 @@ const Footer = () => {
 								</li>
 							))}
 						</FooterSocialMedia>
-						<div>
-							<p className="text-primary quote"> Ready to take the next step and work together? </p>
-							<ButtonDefault href={`mailto:${data.SiteContact.email}`}> Contact me </ButtonDefault>
-								<Contact />
-
-
-						</div>
-					</FooterBody>
-					<div className="box">
+						<div className="box">
 						<SubRight> Good design doesn't date. Bad design does. </SubRight>
 						<CopyRight className="text-dark">
 							© 
@@ -36,7 +35,10 @@ const Footer = () => {
 								<a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
           		</span> 
 							Copyright {data.SiteCopyright} by {data.SiteAuthor} </CopyRight>
-					</div>
+					</div>	
+					</FooterBody>
+					
+					
 				</ContainerLayout>
 			</FooterStyle>
 		</>

@@ -1,7 +1,8 @@
   
 export default {
-  primary: "#ff2d2d",
+  primary: "#0081a7",
   inverse: "#fff",
+  background:"fdfcdc",
   // colors
   darkGrey: "#333447",
   black: "#000",

@@ -5,6 +5,7 @@ export const ContainerLayout = styled.div`
   width: ${variables.width};
   margin-left: auto;
   margin-right: auto;
+  background-color:${variables.background};
 
   &.wrapper {
     max-width: ${variables.wrapperWidth};

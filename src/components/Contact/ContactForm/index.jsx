@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from "axios"
 import styled  from 'styled-components'
+import variables from '../../../data/variables'
 
 import {Formik , Form, FastField,ErrorMessage} from "formik"
 
@@ -17,11 +18,12 @@ const ContactForm =() => {
     const Input = styled.input`
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #6c63ff;
+  border: 2px solid ${variables.darkGrey};
   padding: 0.8rem 1rem;
   border-radius: 7px;
   margin-bottom: 0.5rem;
   transition: 0.3s;
+  font-size:1rem;
 
   ${({ error }) =>
     error &&
@@ -31,6 +33,7 @@ const ContactForm =() => {
 
   &::placeholder {
     color: #a7a7a7;
+    font-size:1rem;
   }
 `;
 
@@ -64,10 +67,10 @@ const ContactForm =() => {
                     try {
                         await axios({
                             method: "POST",
-                            url:
-                                process.env.NODE_ENV !== "development"
-                                    ? `${SiteUrl}/api/contact`
-                                    : "http://localhost:8000/api/contact",
+                            url:process.env.PORTFOLIO_FORMIUM_ENDPOINT,
+                                // process.env.NODE_ENV !== "development"
+                                //     ? `${SiteUrl}/api/contact`
+                                //     : "http://localhost:8000/api/contact",
                             headers: {
                                 "Content-Type": "application/json",
                             },
@@ -91,6 +94,7 @@ const ContactForm =() => {
                     <>
 
 <Form>
+
 
 
 
@@ -139,10 +143,10 @@ const ContactForm =() => {
                         {values.success && (
                             <InputField>
                                 <Center>
-                                    <h4>
+                                    <h2>
                                         Your message has been successfully sent, I will get back to you
                                         ASAP!
-                                    </h4>
+                                    </h2>
                                 </Center>
                             </InputField>
                         )}
