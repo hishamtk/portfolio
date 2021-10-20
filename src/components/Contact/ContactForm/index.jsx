@@ -8,7 +8,6 @@ import {Formik , Form, FastField,ErrorMessage} from "formik"
 
 
 import * as Yup from "yup"
-import {SiteUrl} from "../../../data/data"
 import {Button } from "../../common"
 import {Error,Center,InputField} from "./styles"
 
@@ -68,9 +67,7 @@ const ContactForm =() => {
                         await axios({
                             method: "POST",
                             url:process.env.PORTFOLIO_FORMIUM_ENDPOINT,
-                                // process.env.NODE_ENV !== "development"
-                                //     ? `${SiteUrl}/api/contact`
-                                //     : "http://localhost:8000/api/contact",
+                              
                             headers: {
                                 "Content-Type": "application/json",
                             },
