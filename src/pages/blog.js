@@ -10,6 +10,7 @@ import kebabCase from "lodash/kebabCase"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
+  console.log(data)
   
   return (
     <>
