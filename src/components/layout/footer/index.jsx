@@ -31,7 +31,7 @@ const Footer = () => {
 							<span> {new Date().getFullYear()}, Built with {` `} 
 								<a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
           		</span> 
-							Copyright 2020 by {data.SiteAuthor} </CopyRight>
+							Copyright {data.SiteCopyright} by {data.SiteAuthor} </CopyRight>
 					</div>
 				</ContainerLayout>
 			</FooterStyle>

@@ -28,7 +28,7 @@ const About = () => {
               <Title> Hello, I’m Hisham </Title>
               <Text> I'm a digital Front End Developer hailing from <b className="text-primary lined-link">India</b> living in Calicut. </Text>
               <Text> I love working with modern technologies, building and designing awesome projects. I prefer minimalistic & clean designs with strong user experience.</Text>
-              <Text> The Hacking School Graduate, love to work with great people to make a difference.
+              <Text> <a href="https://www.thehackingschool.com/" target="_blank"><b className="text-primary lined-link">The Hacking School Graduate</b></a>, love to work with great people to make a difference.
               </Text>
               <ResumeButton href="resume.pdf" target="_blank"> Download resume </ResumeButton>
             </div>
