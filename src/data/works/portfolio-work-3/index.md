@@ -4,6 +4,8 @@ date: "2015-05-06T23:46:37.121Z"
 category: backend development
 tags: ['Adobe xd', 'css', 'js', 'dashboard']
 image: './blog-image.jpg'
+url: 'https://neemtree.club'
+
 description: "Not only that, but the second address field also caused them to split their input incorrectly in the address fields. This led to confusion and frustration among users."  
 ---
 

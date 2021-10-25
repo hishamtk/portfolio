@@ -21,23 +21,29 @@ const WorkIndex = ({ data }) => {
 
             <ContainerLayout className="wrapper">
               {works.map(({ node }) => {
+                console.log(node)
               const title = node.frontmatter.title || node.fields.slug
                 return (
                   <WorkPost key={node.fields.slug}>
                     <div className="media">
                       <div className="image-wrapper">
-                        <Link to={node.fields.slug}>
+                        <a
+          href={node.frontmatter.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
                           <Img fluid={node.frontmatter.image.childImageSharp.fluid} title="work title" />
-                        </Link>
+                        </a>
                       </div>
                     </div>
                     <div className="content">
                       <header>
                         <Category>{node.frontmatter.category}</Category>
                         <Title>
-                          <Link className="text-primary lined-link" style={{ boxShadow: `none` }} to={node.fields.slug}>
+                          <a className="text-primary lined-link" style={{ boxShadow: `none` }} href={node.frontmatter.url}   target="_blank"
+          rel="noopener noreferrer" >
                             {title}
-                          </Link>
+                          </a>
                         </Title>
                       </header>
                         <Text
@@ -88,6 +94,7 @@ export const pageQuery = graphql`
             }
             tags
             category
+            url
             description
           }
         }
