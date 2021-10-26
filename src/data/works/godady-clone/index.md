@@ -1,15 +1,15 @@
 ---
-title: portfolio-work-2
-date: "2015-05-28T22:40:32.169Z"
+title: Godady Clone
+date: "2021-03-28T22:40:32.169Z"
 category: web design
-tags: ['Front End', 'css', 'js', 'dashboard']
-image: './blog-image.jpg'
-url: 'https://neemtree.club'
+tags: ['Front End', 'css', 'html', 'HomePage']
+image: './godady-clone.png'
+url: 'https://hishamtk.com/godady-clone'
 
-description: "Radio buttons and checkboxes have long been components that cause users confusion. These components are often used in the same context, but look completely different."
+description: "Godady clone , Static recreation of Godady Home page,"
 ---
 
-Radio buttons and checkboxes have long been components that cause users confusion. These components are often used in the same context, but look completely different. Designers and developers know the difference, but that’s because they learned it through their work. What about users who were never taught the difference?
+<!-- Radio buttons and checkboxes have long been components that cause users confusion. These components are often used in the same context, but look completely different. Designers and developers know the difference, but that’s because they learned it through their work. What about users who were never taught the difference?
 
 The fact that users need to be taught the difference shows that these two components are not intuitive. Their appearance alone does not convey their slight differences in functionality. The visual cues themselves—a dot and checkmark—carry no specific meaning to users other than an option selection. Therefore, the existence of both radio buttons and checkboxes violates the UX principle of Consistency.
 
@@ -37,5 +37,5 @@ How Users Know They Can Select One or Multiple
 The label on the components often indicates whether users can select multiple options or just one. When users can select multiple options, the label is worded in plural form. When users can only select one option, the label is worded in the singular form. Make sure you use the correct noun form when you label mutually exclusive and inclusive components. It’s easy to forget about the labels, but they’re what matters most.
 
 Label noun forms are a clearer cue for mutual exclusivity/inclusivity than a checkmark and a dot. A checkmark and a dot do not signify mutual exclusivity/inclusivity other than by convention that’s familiar to only designers, developers, and tech-savvy users. Regular users who see the different components used in the same context will wonder what the visual differences mean. The inconsistency isn’t severe enough to derail their task, but it certainly diverts their attention.
-
+ -->
 

@@ -1,14 +1,14 @@
 ---
-title: portfolio-work-3
+title: Github App
 date: "2015-05-06T23:46:37.121Z"
-category: backend development
-tags: ['Adobe xd', 'css', 'js', 'dashboard']
-image: './blog-image.jpg'
-url: 'https://neemtree.club'
+category: MERN APP
+tags: ['React', 'css', 'mongodb', 'nodejs','express','material ui']
+image: './github-app.png'
+url: 'https://hishamtk.com/github/'
 
-description: "Not only that, but the second address field also caused them to split their input incorrectly in the address fields. This led to confusion and frustration among users."  
+description: "A Mern App made with github rest API to search and view github Users profile in a more intiuitive manner."  
 ---
-
+<!-- 
 Have you ever filled out a form and froze on the address field? A [research study](https://baymard.com/blog/address-line-2) found that users come to a confusing stop when they encounter the “address line 2” field.
 
 ![double_address_fields](./blog-image.jpg)
@@ -28,4 +28,4 @@ The second address field forces the user to type their address in the system’s
 Real World Expectations
 -----------------------
 
-It’s important to design your form based on the user’s real world expectations. If you force users to rethink conventions in order to match the system, you’ll confuse and frustrate them. Don’t force the user to follow the system, force the system to follow the user.
+It’s important to design your form based on the user’s real world expectations. If you force users to rethink conventions in order to match the system, you’ll confuse and frustrate them. Don’t force the user to follow the system, force the system to follow the user. -->
