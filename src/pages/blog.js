@@ -10,7 +10,7 @@ import kebabCase from "lodash/kebabCase"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
-  console.log(data)
+
   
   return (
     <>
@@ -36,16 +36,11 @@ const BlogIndex = ({ data }) => {
                   <WorkPost key={node.fields.slug}>
                     <div className="media">
                       <div className="image-wrapper">
-                        <Link to={node.fields.slug}>
+                        <a href={node.frontmatter.url} target="_blank" rel="noopener noreferrer">
                           <Img fluid={node.frontmatter.image.childImageSharp.fluid} title="work title" />
-                        </Link> 
+                        </a> 
                       </div>
-                      <SmallText>
-                        Image Credits : 
-                        <UnderLink href={node.frontmatter.imageCredit} target="_blank" title="image credit">
-                          {node.frontmatter.imageCredit}
-                        </UnderLink>
-                      </SmallText>
+                      
                     </div>
                     
                     <div className="content">
@@ -59,9 +54,10 @@ const BlogIndex = ({ data }) => {
                           ))} </span>
                         </SmallText>
                         <Title>
-                          <Link className="text-primary" style={{ boxShadow: `none` }} to={node.fields.slug}>
+                          <a  className="text-primary" style={{ boxShadow: `none` }} href={node.frontmatter.url}  target="_blank"
+          rel="noopener noreferrer">
                             {title}
-                          </Link>
+                          </a>
                         </Title>
                         <SmallText> 
                           <Calendar className="align-middle text-primary" width="18" height="18" /> 
@@ -77,9 +73,7 @@ const BlogIndex = ({ data }) => {
                           __html: node.frontmatter.description || node.excerpt,
                         }}
                       />
-                      <Link to={node.fields.slug}>
-                        <ReadMore className="lined-link"> read more &#8594; </ReadMore>
-                      </Link>
+                     
                     </div>
                   </WorkPost>
                 )
@@ -120,7 +114,8 @@ export const pageQuery = graphql`
               }
             }
             categories
-            imageCredit
+            
+            url
             description
           }
         }
