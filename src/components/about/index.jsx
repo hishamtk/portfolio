@@ -30,7 +30,7 @@ const About = () => {
               <Text> I love working with modern technologies, building and designing awesome projects. I prefer minimalistic & clean designs with strong user experience.</Text>
               <Text> <a href="https://www.thehackingschool.com/" target="_blank"><b className="text-primary lined-link">The Hacking School Graduate</b></a>, love to work with great people to make a difference.
               </Text>
-              <ResumeButton href="resume.pdf" target="_blank"> Download resume </ResumeButton>
+              <ResumeButton href="Hisham_Resume.pdf" target="_blank"> Download resume </ResumeButton>
             </div>
           </AboutSection>
         </ContainerLayout>
